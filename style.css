@@ -1,11 +1,4 @@
-/***********************/
-/***********************/
-/************************/
-/* Mixin para crear cubo ( Caras siempre al frente ) */
-/************************/
-/***********************/
-/***********************/
-/**/
+
 *, *::after, *::before {
     margin: 0;
     padding: 0;
@@ -24,7 +17,7 @@
     height: 100vh;
     overflow: hidden;
     cursor: pointer;
-    background-image: radial-gradient(circle, #171424, black);
+    background-image: radial-gradient(circle, #000000, black);
   }
   
   .face {
@@ -36,7 +29,8 @@
     position: absolute;
     width: 28vw;
     height: 28vw;
-    transform: perspective(90vw) rotateX(75deg) rotateZ(45deg) translateZ(-9vw);
+    transform: perspective(90vw) 
+    rotateX(75deg) rotateZ(45deg) translateZ(-9vw);
   }
   
   .h-shadow {
@@ -66,7 +60,7 @@
     width: 14vw;
     height: 14vw;
     border-radius: 50%;
-    background-image: radial-gradient(#1b182a, transparent);
+    background-image: radial-gradient(#355f81, transparent);
     filter: blur(1vw);
   }
   .h-light:nth-of-type(2) {
@@ -87,7 +81,7 @@
     height: 12vw;
     border-radius: 50%;
     transform: rotateZ(-50deg);
-    background-image: radial-gradient(rgba(81, 137, 251, 0.5) 50%, rgba(40, 125, 210, 0.5), transparent);
+    background-image: radial-gradient(rgba(8, 46, 121, 0.5) 50%, rgba(40, 125, 210, 0.5), transparent);
     filter: blur(2vw);
   }
   .h-light:nth-of-type(3)::before, .h-light:nth-of-type(3)::after {
@@ -180,7 +174,7 @@
     transform: rotateY(180deg) translateX(-27vw);
   }
   .alt__front {
-    background-color: #9E99C1;
+    background-color: #0ca38a;
   }
   .alt__back {
     background-color: #383358;
